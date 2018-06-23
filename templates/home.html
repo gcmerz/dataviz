@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> The Rise and Fall of Roman Emperors </title>
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bokeh/0.13.0/bokeh.css type="text/css" />
+    <script type="text/javascript" src=https://cdnjs.cloudflare.com/ajax/libs/bokeh/0.13.0/bokeh.js></script>
+    {% endblock %}
+  </head>
+
+  <body>
+    
+    {% block title %}
+    <h1 class="text-center"> The Rise and Fall of Roman Emperors </h1>
+    <p class="text-center"><em>
+    An exploration of the lives, reigns, 
+    and deaths of 68 Roman Emperors from 26 BC to 395 AD
+    </em></p>
+    {% endblock %}
+
+    {% block content %}
+    <div class="container">
+      <div class="list-group">
+      <a href="/emperor" class="text-center list-group-item list-group-item-action  ">
+        Individual Emperors
+      </a>
+      <a href="/powerplays" class="text-center list-group-item list-group-item-action">
+        Rises to Power
+      </a>
+      <a href="/reigns" class="text-center list-group-item list-group-item-action">
+        Reign Durations
+      </a>
+      <a href="/deaths" class="text-center list-group-item list-group-item-action">
+        Deaths
+      </a>
+      <a href="/takeaways" class="text-center list-group-item list-group-item-action">
+        Takeaways
+      </a>
+    </div>
+  </div>
+
+
+    {% endblock %}
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin=  "anonymous"></script>
+  
+
+  </body>
+  <footer>
+    <p class="text-center"> A Python Flask App by Gabbi Merz</p>
+  </footer>
+</html>

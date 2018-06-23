@@ -1,0 +1,18 @@
+{% extends "home.html" %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+{% block title %}
+{{ super () }}
+<div class = "container text-center">
+<a href="/">Home</a>
+</div>
+{% endblock %}
+{% block content %}
+	<div class="container">
+	<h3 class="text-center">Heatmap</h3>
+    <!--EXPERIMENTING WITH BOKEH-->
+    {{ script|safe }}
+    {{ div|safe }}
+	</div>
+{% endblock %}
